@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Project</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"> </script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="topNav" id="topNavId">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"> Logo Space </a>
+            </div>
+            <div class="menu">
+                <a href="#header" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#whyUs">Why us</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">&#9776;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <h2>Welcome to <span>Our Website</span> </h2>
+        <p>We are the best to create a creative website</p>
+    </header>   
+
+    <!-- Content -->
+    <main>
+        <!-- About us -->
+        <section id="about">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="firstTitle">About Us!</h1>
+                    <h2 class="secondTitle">We are the best</h2>
+                    <p><span class="thirdTitle">to create a creative website</span>, sit amet consectetur adipisicing elit. 
+                        Explicabo assumenda veniam corporis doloribus odit delectus 
+                        harum sint soluta velit asperiores. Aspernatur numquam animi 
+                        facilis debitis maiores similique beatae laborum fugiat!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="col-33">
+                    <img src="img/about.jpg" alt="aboutUs">
+                </div>
+            </div>
+        </section>
+
+        <!-- Clarity -->
+        <section style="background-color: #000; color: #fff;">
+            <div class="row"> 
+                <div class="col-33">
+                    <img src="img/clarity.jpg" alt="clarity">
+                </div>
+                <div class="col-66">
+                    <h1 class="firstTitle">Clarity</h1>
+                    <h2 class="secondTitle">Pixels, who?</h2>
+                    <p><span class="thirdTitle">to create a creative website</span>, sit amet consectetur adipisicing elit. 
+                        Explicabo assumenda veniam corporis doloribus odit delectus 
+                        harum sint soluta velit asperiores. Aspernatur numquam animi 
+                        facilis debitis maiores similique beatae laborum fugiat!</p>
+                    <button>Read more</button>
+                </div>                
+            </div>
+        </section>
+
+          <!-- Why us -->
+          <section id="whyUs">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="firstTitle">Why Us!</h1>
+                    <h2 class="secondTitle">We are the best</h2>
+                    <p><span class="thirdTitle">to create a creative website</span>, sit amet consectetur adipisicing elit. 
+                        Explicabo assumenda veniam corporis doloribus odit delectus 
+                        harum sint soluta velit asperiores. Aspernatur numquam animi 
+                        facilis debitis maiores similique beatae laborum fugiat!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="col-33">
+                    <img src="img/about.jpg" alt="aboutUs">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+            <h1 class="firstTitle" style="text-align: center;">Contact Form</h1>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" name="name" required placeholder="Insert Name">
+                <label for="email">E-mail</label>
+                <input type="email" name="email"  required placeholder="Insert E-mail">
+                <textarea rows="8"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+         <!-- Copyright -->
+        <p>&copy; Copyright 2021 Powered by <span style="font-weight: bold; font-size: 11px;">Fidan Badalova</span> </p> 
+    </footer>
+
+    <!-- Javacript -->
+    <script type="text/javascript">
+        function responsiveMenu() {
+            var x = document.getElementById("topNavId") ;
+            if (x.className==="topNav") {
+                x.className += " responsive";
+                
+            } else {
+                x.className ="topNav";              
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
